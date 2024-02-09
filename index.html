@@ -172,43 +172,66 @@
                 <div class="tab-bg">
                   <h6 class=""><b>SUBMIT A NEW JOB </b>- By Using the BREEZE Remote Modeling System you are agreeing to
                     the terms of the Remote Modeling License Agreement.</h6>
-                  <div class="row align-items-center">
-                    <div class="col-12 col-xl-5">
-                      <form action="" id="">
-                        <div class="row align-items-center">
-                          <div class="col-xl-6 col-12">
-                            <!-- actual upload which is hidden -->
-                            <input type="file" id="actual-btn" hidden />
-                            <!-- our custom upload button -->
-                            <label class="cus-file-lab" for="actual-btn">Choose File <svg xmlns="http://www.w3.org/2000/svg"
-                                width="22" height="21" viewBox="0 0 22 21" fill="none">
-                                <path
-                                  d="M21 17.5C21 18.0304 20.7893 18.5391 20.4142 18.9142C20.0391 19.2893 19.5304 19.5 19 19.5H3C2.46957 19.5 1.96086 19.2893 1.58579 18.9142C1.21071 18.5391 1 18.0304 1 17.5V3.5C1 2.96957 1.21071 2.46086 1.58579 2.08579C1.96086 1.71071 2.46957 1.5 3 1.5H8L10 4.5H19C19.5304 4.5 20.0391 4.71071 20.4142 5.08579C20.7893 5.46086 21 5.96957 21 6.5V17.5Z"
-                                  stroke="#223F94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg></label>
-                            <!-- name of file chosen -->
-                            <span id="file-chosen">No file chosen</span>
-                          </div>
-    
-                          <div class="col-xl-6 col-12">
-                            <div class="custom-select" style="width:200px;">
-                              <select>
-                                <option value="0">23132 64-bit</option>
-                                <option value="1">23132 32-bit</option>
-                                <option value="2">23131 62-bit</option>
-                                <option value="3">23130 32-bit</option>
-                                <option value="4">23129 64-bit</option>
-                                <option value="5">23128 32-bit</option>
-                                <option value="6">23127 62-bit</option>
-                                <option value="7">23126 32-bit</option>
-                                <option value="8">23125 64-bit</option>
-                                <option value="9">23124 64-bit</option>
-                                <option value="10">23123 32-bit</option>
-                                <option value="11">23122 64-bit</option>
-                              </select>
-                            </div>
-                          </div>
+
+                    <div class="d-flex align-items-center justify-content-flex-start filter-sec-tb1">
+                      <div class="">
+                        <div class="custom-select" style="width:288px;">
+                          <select>
+                            <option value="0">Department</option>
+                            <option value="1">23132 32-bit</option>
+                            <option value="2">23131 62-bit</option>
+                            <option value="3">23130 32-bit</option>
+                            <option value="4">23129 64-bit</option>
+                            <option value="5">23128 32-bit</option>
+                            <option value="6">23127 62-bit</option>
+                            <option value="7">23126 32-bit</option>
+                            <option value="8">23125 64-bit</option>
+                            <option value="9">23124 64-bit</option>
+                            <option value="10">23123 32-bit</option>
+                            <option value="11">23122 64-bit</option>
+                          </select>
                         </div>
+                      </div>
+                     
+
+                      <div class="">
+                        <div class="custom-select" style="width:200px;">
+                          <select>
+                            <option value="0">Version</option>
+                            <option value="1">23132 32-bit</option>
+                            <option value="2">23131 62-bit</option>
+                            <option value="3">23130 32-bit</option>
+                            <option value="4">23129 64-bit</option>
+                            <option value="5">23128 32-bit</option>
+                            <option value="6">23127 62-bit</option>
+                            <option value="7">23126 32-bit</option>
+                            <option value="8">23125 64-bit</option>
+                            <option value="9">23124 64-bit</option>
+                            <option value="10">23123 32-bit</option>
+                            <option value="11">23122 64-bit</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="">
+                        <!-- actual upload which is hidden -->
+                        <input type="file" id="actual-btn" hidden />
+                        <!-- our custom upload button -->
+                        <label class="cus-file-lab" for="actual-btn">Choose File <svg xmlns="http://www.w3.org/2000/svg"
+                            width="22" height="21" viewBox="0 0 22 21" fill="none">
+                            <path
+                              d="M21 17.5C21 18.0304 20.7893 18.5391 20.4142 18.9142C20.0391 19.2893 19.5304 19.5 19 19.5H3C2.46957 19.5 1.96086 19.2893 1.58579 18.9142C1.21071 18.5391 1 18.0304 1 17.5V3.5C1 2.96957 1.21071 2.46086 1.58579 2.08579C1.96086 1.71071 2.46957 1.5 3 1.5H8L10 4.5H19C19.5304 4.5 20.0391 4.71071 20.4142 5.08579C20.7893 5.46086 21 5.96957 21 6.5V17.5Z"
+                              stroke="#223F94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg></label>
+                        <!-- name of file chosen -->
+                        <span id="file-chosen">No file chosen</span>
+                      </div>
+
+                      
+                    </div>
+                  <div class="row align-items-center">
+                    <div class="col-12 col-xl-6">
+                      <form action="" id="">
+                    
     
                         <legend>User Information</legend>
                         <div class="form-outline" data-mdb-input-init>
@@ -232,7 +255,7 @@
                         <button class="btn" type="submit">Submit</button>
                       </form>
                     </div>
-                    <div class="col-12 col-xl-7 text-center">
+                    <div class="col-12 col-xl-6 text-center">
                       <img src="img/OBJECTS.png" width="255" height="286" alt="image" class="img-fluid">
                     </div>
                   </div>

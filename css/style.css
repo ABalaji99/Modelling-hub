@@ -213,12 +213,12 @@ table {
     border: 1px solid #ddd;
 }
 
-.tab-pane form input {
+.tab-pane form .form-outline{
     border-radius: 12px;
     border: 1px solid rgba(24, 24, 35, 0.30);
     background: var(--white) !important;
     padding: 6px 20px;
-    width: 130px;
+    width: 460px;
 }
 
 .tab-pane form select {
@@ -633,6 +633,9 @@ color: var(--tdfail);
     color:var(--tdsuc);
 }
 
+.filter-sec-tb1 {
+    gap: 24px;
+}
 
 /*Abhishek code */
 
@@ -649,86 +652,108 @@ color: var(--tdfail);
 .sidenav:hover + div.main-container#main-container {
     width: calc(100% - 258px);
 }
+:root {
+    --light_blue_color: #099CBD;
+    --text_color: #58595B;
+    --dark_text_color: #181823;
+}
 
+.sidenav {
+    width: 104px;
+    height: 100vh;
+}
+.sidenav:hover {
+    width: 258px;
+}
+.sidenav:hover + .main-content {
+    width: calc(100% - 258px);
+}
+.main-content {
+    width: calc(100% - 104px);
+}
 .navbar-brand {
     padding: 40px 0;
 }
 .small_logo {
     display: block;
+    animation: fade_in 0.5s linear;
 }
 .main_logo {
     display: none;
 }
 .sidenav:hover .main_logo {
     display: block;
+    animation: fade_in 0.5s linear;
 }
 .sidenav:hover .small_logo {
     display: none;
 }
 .sidenav-menu {
     list-style: none;
-    padding: 14px 30px 30px 30px;
+    padding: 14px 30px 30px 38px;
 }
 li.sidenav-item {
     margin-top: 26px;
 }
 li.sidenav-item a {
-    color: var(--secondary-clr);
+    color: var(--text_color);
     font-size: 16px;
+    transition: 0.3s ease-in-out;
 }
 li.sidenav-item.active a {
-    color: var(--primary-clr);
+    color: var(--dark_text_color);
 }
 li.sidenav-item span {
     margin-left: 8px;
 }
 li.sidenav-item.active svg path {
     fill: var(--light_blue_color);
-    /* stroke: var(--light_blue_color); */
 }
 .user_avtar {
-    padding: 22px 0px 22px 27px;
-    border: 2px solid var(--border-clr) ;
-    border-left: none;
-    border-right: none;
+    padding: 22px 0px 22px 30px;
 }
 .user_avtar h5 {
-    margin: 0 0 0 5px;
+    margin: 0 0 0 10px;
     font-size: 18px;
     font-weight: 500;
-    color: var(--primary-clr);
+    color: var(--dark_text_color);
 }
 .user_avtar a {
     font-weight: normal;
     font-size: 12px;
-    color: var(--primary-clr);
+    color: var(--dark_text_color);
 }
 .sidenav .user_avtar {
     padding-right: 30px;
+    min-height: 88px;
+    border-top: 2px solid var(--border-clr);
+    border-bottom: 2px solid var(--border-clr);
 }
 .sidenav li.sidenav-item span,
 .sidenav h5 {
     display: none;
 }
-.sidenav li.sidenav-item {
-    text-align: center;
-}
-
 .sidenav:hover .user_avtar {
     padding-right: 0px;
 }
-
-.sidenav:hover .nav-pills li a span.toggle-anchor{
-    display: inline-block;
-}
-.sidenav:hover li.sidenav-item span,
+.sidenav:hover li.nav-item span,
 .sidenav:hover h5 {
     display: inline-block;
+    animation: fade_in 0.5s linear;
 }
 .sidenav:hover li.sidenav-item {
     text-align: left;
 }
 .h-vh {
-    height: 100%;
+    height: 100vh;
+}
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 /*Abhishek code */
